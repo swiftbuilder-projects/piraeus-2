@@ -16,7 +16,7 @@ export const oceaniaDefaultContent: OceaniaTemplateContent = {
         badgeText: "piraeus group Limited",
         title: "Global management Consulting",
         highlightedText: "and Investment Firm",
-        description: "Welcome to piraeus group Limited, stand out as a global management consulting and investment firm, dedicated to creating sustainable, efficient, and profitable strategies for governments, businesses, and communities, specializing in the dynamic sectors of healthcare, finance, technology, and energy.",
+        description: "Welcome to piraeus group Limited, We stand out as a global management consulting and investment firm, dedicated to creating sustainable, efficient, and profitable strategies for governments, businesses, and communities, specializing in the dynamic sectors of healthcare, finance, technology, and energy.",
         primaryCtaText: "",
         primaryCtaLink: "",
         secondaryCtaText: "",
@@ -26,7 +26,7 @@ export const oceaniaDefaultContent: OceaniaTemplateContent = {
     about: {
         badgeText: "WHO WE ARE",
         title: "Excellence in Strategy, Finance & Sustainability",
-        description: "Piraeus group limited s a multidisciplinary consulting firm built on integrity, professionalism, and long-term value creation. Our team of experienced consultants works closely with clients to understand their goals and provide tailored solutions that drive measurable impact.",
+        description: "Piraeus group limited is a multidisciplinary consulting firm built on integrity, professionalism, and long-term value creation. Our team of experienced consultants works closely with clients to understand their goals and provide tailored solutions that drive measurable impact.",
         mission: "To provide exceptional consulting, financial, and sustainable solutions that empower governments, businesses, and communities to thrive.",
         vision: "To be Africa’s leading consultancy in strategic, financial, and sustainable initiatives, delivering measurable impact and long-term growth.",
         values: ["Integrity & Transparency", "Innovation & Sustainability", "Client-Centric Excellence", "Environmental Responsibility"],
@@ -162,7 +162,7 @@ export const oceaniaDefaultContent: OceaniaTemplateContent = {
         description: "A leading strategic consulting firm dedicated to finance, innovation, and sustainability.",
         contactInfo: {
             phone: "+254 (0) 720 000 000",
-            email: "info@piraeusgroup.co.ke",
+            email: "info@piraeusgroupltd.com",
             address: "Nairobi, Kenya",
         },
         links: [
