@@ -187,6 +187,6 @@ export const oceaniaDefaultContent: OceaniaTemplateContent = {
             { platform: "LinkedIn", url: "#", icon: "Linkedin" },
             { platform: "Twitter", url: "#", icon: "Twitter" },
         ],
-        copyrightText: "© 2017 PIRAEUS Group Limited. All rights reserved.",
+        copyrightText: "©2017  PIRAEUS Group Limited. All rights reserved.",
     },
 };
