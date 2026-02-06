@@ -161,7 +161,7 @@ export const oceaniaDefaultContent: OceaniaTemplateContent = {
         logoImage: "/images/templates/oceania/logo.png",
         description: "A leading strategic consulting firm dedicated to finance, innovation, and sustainability.",
         contactInfo: {
-            phone: "+254 (0) 700 000 000",
+            phone: "+254 (0) 720 000 000",
             email: "info@piraeusgroup.co.ke",
             address: "Nairobi, Kenya",
         },
@@ -187,6 +187,6 @@ export const oceaniaDefaultContent: OceaniaTemplateContent = {
             { platform: "LinkedIn", url: "#", icon: "Linkedin" },
             { platform: "Twitter", url: "#", icon: "Twitter" },
         ],
-        copyrightText: "© 2026 PIRAEUS Group Limited. All rights reserved.",
+        copyrightText: "© 2017 PIRAEUS Group Limited. All rights reserved.",
     },
 };

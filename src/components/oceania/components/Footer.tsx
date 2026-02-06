@@ -23,22 +23,25 @@ export function Footer({ content }: { content?: OceaniaFooterProps }) {
     };
 
     return (
-        <footer id="contact" className="bg-[#fbfbfb] border-t border-gray-100 pt-32 pb-16">
+        <footer id="contact" className="bg-[#111111] pt-32 pb-16 text-white font-inter">
             <div className="container mx-auto px-6 lg:px-12">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 pb-32">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 pb-32 border-b border-white/5">
                     {/* Brand Section */}
-                    <div className="lg:col-span-5">
-                        <Link href="#home" className="flex items-center gap-4 group mb-10">
-                            <Logo className="h-9 w-auto text-[#005A9C]" />
-                            <h2
-                                className="text-2xl font-bold tracking-[0.3em] text-[#005A9C] font-playfair uppercase"
+                    <div className="lg:col-span-12 mb-10">
+                        <div className="flex items-center gap-6 mb-8">
+                            <div className="w-16 h-[1px] bg-[#4DA1E8]" />
+                            <span
+                                className="text-xs font-semibold tracking-[0.2em] text-[#4DA1E8] uppercase"
                                 data-studio-path="footer.logoText"
                             >
                                 {logoText}
-                            </h2>
-                        </Link>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div className="lg:col-span-5">
                         <p
-                            className="text-gray-500 text-lg font-inter font-light leading-relaxed max-w-sm mb-12"
+                            className="text-white/90 text-lg font-light leading-relaxed max-w-sm mb-12"
                             data-studio-path="footer.description"
                         >
                             {description}
@@ -48,7 +51,7 @@ export function Footer({ content }: { content?: OceaniaFooterProps }) {
                                 <a
                                     key={index}
                                     href={social.url}
-                                    className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-[#005A9C] hover:border-[#005A9C] transition-all duration-300"
+                                    className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:text-white hover:border-[#4DA1E8] hover:bg-[#4DA1E8]/10 transition-all duration-300"
                                     data-studio-path={`footer.socialLinks.${index}`}
                                 >
                                     <SocialIcon platform={social.platform} className="w-5 h-5" />
@@ -61,15 +64,15 @@ export function Footer({ content }: { content?: OceaniaFooterProps }) {
                     <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
                         {links.map((section, sIndex) => (
                             <div key={sIndex}>
-                                <h4 className="text-[11px] font-bold tracking-[0.3em] text-[#111111] mb-10 uppercase">
+                                <h4 className="text-xs font-bold tracking-wider text-[#4DA1E8] mb-8 uppercase">
                                     {section.title}
                                 </h4>
-                                <ul className="space-y-6">
+                                <ul className="space-y-4">
                                     {section.items.map((item, iIndex) => (
                                         <li key={iIndex}>
                                             <a
                                                 href={item.href}
-                                                className="text-gray-500 hover:text-[#D69E66] transition-colors text-xs font-bold tracking-[0.1em]"
+                                                className="text-sm text-white hover:text-[#4DA1E8] transition-colors"
                                                 data-studio-path={`footer.links.${sIndex}.items.${iIndex}.label`}
                                             >
                                                 {item.label}
@@ -81,21 +84,27 @@ export function Footer({ content }: { content?: OceaniaFooterProps }) {
                         ))}
 
                         <div className="lg:col-span-1">
-                            <h4 className="text-[11px] font-bold tracking-[0.3em] text-[#111111] mb-10 uppercase">
-                                GET IN TOUCH
+                            <h4 className="text-xs font-bold tracking-wider text-[#4DA1E8] mb-8 uppercase">
+                                CONTACT
                             </h4>
-                            <ul className="space-y-8">
-                                <li className="flex items-start gap-4 group">
-                                    <Phone className="w-5 h-5 text-[#D69E66] flex-shrink-0 group-hover:scale-110 transition-transform" />
-                                    <span className="text-gray-500 text-xs font-bold tracking-[0.1em]" data-studio-path="footer.contactInfo.phone">{contactInfo.phone}</span>
+                            <ul className="space-y-6">
+                                <li className="flex items-center gap-4 group">
+                                    <div className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-[#4DA1E8]/50 transition-colors">
+                                        <Phone className="w-4 h-4 text-[#4DA1E8]" />
+                                    </div>
+                                    <span className="text-sm font-medium text-white" data-studio-path="footer.contactInfo.phone">{contactInfo.phone}</span>
                                 </li>
-                                <li className="flex items-start gap-4 group">
-                                    <Mail className="w-5 h-5 text-[#D69E66] flex-shrink-0 group-hover:scale-110 transition-transform" />
-                                    <span className="text-gray-500 text-xs font-bold tracking-[0.1em]" data-studio-path="footer.contactInfo.email">{contactInfo.email}</span>
+                                <li className="flex items-center gap-4 group">
+                                    <div className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-[#4DA1E8]/50 transition-colors">
+                                        <Mail className="w-4 h-4 text-[#4DA1E8]" />
+                                    </div>
+                                    <span className="text-sm font-medium text-white" data-studio-path="footer.contactInfo.email">{contactInfo.email}</span>
                                 </li>
-                                <li className="flex items-start gap-4 group">
-                                    <MapPin className="w-5 h-5 text-[#D69E66] flex-shrink-0 group-hover:scale-110 transition-transform" />
-                                    <span className="text-gray-500 text-xs font-bold tracking-[0.1em]" data-studio-path="footer.contactInfo.address">{contactInfo.address}</span>
+                                <li className="flex items-center gap-4 group">
+                                    <div className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-[#4DA1E8]/50 transition-colors">
+                                        <MapPin className="w-4 h-4 text-[#4DA1E8]" />
+                                    </div>
+                                    <span className="text-sm font-medium text-white" data-studio-path="footer.contactInfo.address">{contactInfo.address}</span>
                                 </li>
                             </ul>
                         </div>
@@ -103,16 +112,16 @@ export function Footer({ content }: { content?: OceaniaFooterProps }) {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-16 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-12">
-                    <p className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase" data-studio-path="footer.copyrightText">
-                        {copyrightText}
+                <div className="pt-10 flex flex-col md:flex-row justify-between items-center gap-8 text-sm font-medium text-white">
+                    <p data-studio-path="footer.copyrightText" className="text-sm font-medium">
+                        © 2017 {logoText}. All Rights Reserved.
                     </p>
                     <button
                         onClick={scrollToTop}
-                        className="flex items-center gap-4 text-gray-400 hover:text-black transition-all group"
+                        className="flex items-center gap-5 hover:text-[#4DA1E8] transition-all group"
                     >
-                        <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Back to Top</span>
-                        <div className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:-translate-y-2 transition-transform">
+                        <span className="text-sm font-bold uppercase">BACK TO TOP</span>
+                        <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:-translate-y-1 group-hover:border-[#4DA1E8] transition-all">
                             <ArrowUp className="w-4 h-4" />
                         </div>
                     </button>
